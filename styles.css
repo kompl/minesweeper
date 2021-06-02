@@ -34,3 +34,9 @@ input {
     display: flex;
     justify-content: space-between;
 }
+button {
+    background-color: #dfedec;
+    text-align: center;
+    font-size: 12pt;
+    font-weight: 600;
+}

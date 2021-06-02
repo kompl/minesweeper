@@ -10,18 +10,18 @@
   <div class="board-settings">
     <div class="board-settings-part">
       <input id='boardHeight' type="range" min="1" max="10"/>
-      <label for="boardHeight">boardHeight</label>
+      <label for="boardHeight">Высота</label>
     </div>
     <div class="board-settings-part">
       <input id='boardLength' type="range" min="1" max="10"/>
-      <label for="boardLength">boardLength</label></div>
+      <label for="boardLength">Ширина</label></div>
     <div class="board-settings-part">
-      <input type="radio" class="num" name="difficultyLevelChoice" checked="checked" value="easy"/>easy<Br>
-      <input type="radio" class="num" name="difficultyLevelChoice" value="normal"/>normal<Br>
-      <input type="radio" class="num" name="difficultyLevelChoice" value="hard"/>hard<Br>
+      <input type="radio" class="num" name="difficultyLevelChoice" checked="checked" value="easy"/>Легко<Br>
+      <input type="radio" class="num" name="difficultyLevelChoice" value="normal"/>Нормально<Br>
+      <input type="radio" class="num" name="difficultyLevelChoice" value="hard"/>Сложно<Br>
     </div>
-    <button onclick="startGameMessage(document.getElementById('boardHeight').value, document.getElementById('boardLength').value, document.querySelector('input[name=\x22difficultyLevelChoice\x22]:checked').value);">
-      Start Game
+    <button onclick="startGame(document.getElementById('boardHeight').value, document.getElementById('boardLength').value, document.querySelector('input[name=\x22difficultyLevelChoice\x22]:checked').value);">
+      Начать игру
     </button>
   </div>
   </div>

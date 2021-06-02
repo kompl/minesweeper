@@ -68,7 +68,6 @@ function getRandomIndex(max) {
 
 function calculateDanger(schema, y, x) {
     let danger = 0
-    console.log(schema[x][y], y , x)
     if (schema[x][y] !== 100) {
         if (x && schema[x-1][y] === 100) {danger++}
         if (x && y && schema[x-1][y-1] === 100) {danger++}
@@ -91,4 +90,3 @@ function swapTile(cell, hasMine) {
     }
     return cell
 }
-

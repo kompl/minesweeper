@@ -1,7 +1,7 @@
 import {DifficultyLevel} from "./board.js";
 import {generateBoard} from "./board.js";
 
-window.startGameMessage =  function startGame(boardHeight, boardLength, difficultyLevelChoice) {
+window.startGame =  function buildGame(boardHeight, boardLength, difficultyLevelChoice) {
     clearBoard("board")
     let difficultyLevel = new DifficultyLevel(difficultyLevelChoice)
     console.log(difficultyLevelChoice)
