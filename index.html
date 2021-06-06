@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mine Sweeper!</title>
+  <link href="stylesheets/index.css" rel="stylesheet">
+</head>
+<body>
+<div class="board-settings">
+  <div class="board-settings-part">
+    <label for="boardHeight">height</label> <input id="boardHeight" max="10" min="4" type="range" />
+  </div>
+  <div class="board-settings-part">
+    <label for="boardLength">width</label> <input id="boardLength" max="10" min="4" type="range" />
+  </div>
+  <div class="board-settings-part">
+    <label class="difficultyLevel">easy <input checked="checked" name="difficultyLevelChoice" type="radio" value="easy">
+      <span class="checkmark"></span> </label> <label class="difficultyLevel">normal <input name="difficultyLevelChoice"
+          type="radio" value="normal"> <span class="checkmark"></span> </label> <label class="difficultyLevel">hard
+    <input name="difficultyLevelChoice" type="radio" value="hard"> <span class="checkmark"></span> </label>
+  </div>
+</div>
+<div id="gameMenu">
+  <span>Retry</span>
+</div>
+<div id="board"></div>
+</body>
+<script src="./scripts/main.js" type="module"></script>
+</html>

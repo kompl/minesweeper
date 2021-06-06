@@ -1,0 +1,24 @@
+
+.difficultyLevel input {
+    float: right;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    height: 13px;
+    width: 13px;
+    position: relative;
+    float: right;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.difficultyLevel:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.difficultyLevel input:checked ~ .checkmark {
+    background-color: #1d291e;
+}
